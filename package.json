@@ -1,0 +1,12 @@
+{
+  "name": "nielsen-event-wrapper",
+  "version": "1.0.0",
+  "main": "nielsenEventWarpper.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watchAll --testTimeout=20000"
+  },
+  "dependencies": {
+    "jest": "^29.4.3"
+  }
+}
