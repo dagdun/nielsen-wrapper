@@ -96,7 +96,7 @@ class nielsenWarpper {
     this.startInterval();
   }
 
-  onSeek(position) {
+  onSeeked(position) {
     this.currentPosition = position;
   }
 

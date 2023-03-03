@@ -6,7 +6,9 @@
 
 `yarn test`
 
-# App
+# How to use
+
+## App
 
 ```javascript
 import nielsenWarpper from "./nielsenEventWarpper";
@@ -22,12 +24,12 @@ const VideoPlayer = ({ item }) => {
   return (
     <video
       src={item.url}
-      onPlay={() => nielsen.play()}
-      onPause={() => nielsen.pause()}
-      onSeeked={(position) => nielsen.seeked(position)}
-      onEnded={() => nielsen.end()}
-      onAdStart={(id, type) => nielsen.adStart(id, type)}
-      onAdEnd={() => nielsen.adEnd()}
+      onPlay={() => nielsen.onPlay()}
+      onPause={() => nielsen.onPause()}
+      onSeeked={(position) => nielsen.onSeeked(position)}
+      onEnded={() => nielsen.onEnd()}
+      onAdStart={(id, type) => nielsen.onAdStart(id, type)}
+      onAdEnd={() => nielsen.onAdEnd()}
     />
   );
 };
@@ -35,7 +37,7 @@ const VideoPlayer = ({ item }) => {
 export default VideoPlayer;
 ```
 
-# Web
+## Web
 
 ```javascript
 import nielsenWarpper from "./nielsenEventWarpper";
@@ -48,12 +50,12 @@ const VideoPlayer = ({ item }) => {
   return (
     <video
       src={item.url}
-      onPlay={() => nielsen.play()}
-      onPause={() => nielsen.pause()}
-      onSeeked={(position) => nielsen.seeked(position)}
-      onEnded={() => nielsen.end()}
-      onAdStart={(id, type) => nielsen.adStart(id, type)}
-      onAdEnd={() => nielsen.adEnd()}
+      onPlay={() => nielsen.onPlay()}
+      onPause={() => nielsen.onPause()}
+      onSeeked={(position) => nielsen.onSeeked(position)}
+      onEnded={() => nielsen.onEnd()}
+      onAdStart={(id, type) => nielsen.onAdStart(id, type)}
+      onAdEnd={() => nielsen.onAdEnd()}
     />
   );
 };
